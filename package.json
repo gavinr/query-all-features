@@ -1,6 +1,6 @@
 {
   "name": "query-all-features",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Query all features of an ArcGIS Feature Service",
   "type": "module",
   "source": "src/index.js",
@@ -36,5 +36,8 @@
   },
   "jest": {
     "transform": {}
+  },
+  "dependencies": {
+    "@esri/arcgis-rest-feature-service": "^4.0.2"
   }
 }

@@ -1,5 +1,16 @@
-import {add} from "./index";
+import { getAllFeatures } from "./index";
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(add(1, 2)).toBe(3);
+test('basic query', async () => {
+  const results = await getAllFeatures("https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer/0");
+  // console.log('results', results.features.length);
+  expect(results.features.length).toEqual(3557);
+});
+
+test('fail on bad url', async () => {
+  try {
+    await getAllFeatures("https://sampleserver6.arcgisonline.com/asdf");
+  } catch(e) {
+    console.log('CATCH', e);
+    expect(e.code).toEqual('HTTP 404');
+  }
 });
