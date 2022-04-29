@@ -1,0 +1,23 @@
+{
+  "name": "query-all-features",
+  "version": "1.0.0",
+  "description": "Query all features of an ArcGIS Feature Service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavinr/query-all-features.git"
+  },
+  "keywords": [
+    "arcgis",
+    "rest"
+  ],
+  "author": "Gavin Rehkemper",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gavinr/query-all-features/issues"
+  },
+  "homepage": "https://github.com/gavinr/query-all-features#readme"
+}
