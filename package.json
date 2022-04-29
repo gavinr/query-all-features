@@ -2,7 +2,6 @@
   "name": "query-all-features",
   "version": "1.0.0",
   "description": "Query all features of an ArcGIS Feature Service",
-
   "type": "module",
   "source": "src/index.js",
   "exports": {
@@ -12,13 +11,11 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
-
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gavinr/query-all-features.git"
@@ -34,6 +31,10 @@
   },
   "homepage": "https://github.com/gavinr/query-all-features#readme",
   "devDependencies": {
+    "jest": "^28.0.3",
     "microbundle": "^0.15.0"
+  },
+  "jest": {
+    "transform": {}
   }
 }
