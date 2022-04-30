@@ -34,11 +34,14 @@
   },
   "homepage": "https://github.com/gavinr/query-all-features#readme",
   "devDependencies": {
+    "@esri/arcgis-rest-feature-service": "^4.0.2",
     "jest": "^28.0.3",
-    "microbundle": "^0.15.0",
-    "@esri/arcgis-rest-feature-service": "^4.0.2"
+    "microbundle": "^0.15.0"
   },
   "jest": {
     "transform": {}
+  },
+  "dependencies": {
+    "@esri/arcgis-rest-request": "^4.0.2"
   }
 }
