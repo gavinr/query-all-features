@@ -1,7 +1,9 @@
 # Release
 
-1. `npm run build`
-2. `npm run test`
-3. `npm version X.X.X`
-4. `npm run build`
-5. `npm publish`
+1. Switch to `master` branch
+2. `npm run build`
+3. `npm run test`
+4. `npm version X.X.X`
+5. `git push`
+6. `npm run build`
+7. `npm publish`

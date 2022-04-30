@@ -20,7 +20,11 @@ Then:
 ```js
 import { queryAllFeatures } from "query-all-features";
 
-queryAllFeatures({url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer/0"}).then((results) => {
+queryAllFeatures(
+    {
+        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer/0"
+    }
+).then((results) => {
     console.log('results', results);
 }, (err) => {
     console.error('err', err);
@@ -32,7 +36,7 @@ queryAllFeatures({url: "https://sampleserver6.arcgisonline.com/arcgis/rest/servi
 ### queryAllFeatures
 
 <pre>
-queryAllFeatures(requestOptions, additionalOptions): Promise<<a href="[my-url](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/IQueryFeaturesResponse)">IQueryFeaturesResponse</a>>
+queryAllFeatures(<a href="https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/IQueryFeaturesOptions">requestOptions</a>, <a href="#IQueryFeaturesAllAdditionalOptions">additionalOptions</a>): Promise<<a href="https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/IQueryFeaturesResponse">IQueryFeaturesResponse</a>>
 </pre>
 
 Query a feature service, repeatedly paging through the results to get all the features.
@@ -53,7 +57,13 @@ Query a feature service, repeatedly paging through the results to get all the fe
 ```js
 import { queryAllFeatures } from "query-all-features";
 
-queryAllFeatures({url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer/0"}, { pageBy: 100}).then((results) => {
+queryAllFeatures(
+    {
+        url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer/0"
+    }, { 
+        pageBy: 100
+    }
+).then((results) => {
     console.log('results', results);
 }, (err) => {
     console.error('err', err);
@@ -63,7 +73,7 @@ queryAllFeatures({url: "https://sampleserver6.arcgisonline.com/arcgis/rest/servi
 #### Returns
 
 <pre>
-Promise<<a href="[my-url](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/IQueryFeaturesResponse)">IQueryFeaturesResponse</a>>
+Promise<<a href="https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/IQueryFeaturesResponse">IQueryFeaturesResponse</a>>
 </pre>
 
 A Promise that will resolve with the same query response as [queryFeatures](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/queryFeatures).
