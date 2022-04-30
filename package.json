@@ -11,6 +11,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "microbundle",
@@ -32,12 +35,10 @@
   "homepage": "https://github.com/gavinr/query-all-features#readme",
   "devDependencies": {
     "jest": "^28.0.3",
-    "microbundle": "^0.15.0"
+    "microbundle": "^0.15.0",
+    "@esri/arcgis-rest-feature-service": "^4.0.2"
   },
   "jest": {
     "transform": {}
-  },
-  "dependencies": {
-    "@esri/arcgis-rest-feature-service": "^4.0.2"
   }
 }
