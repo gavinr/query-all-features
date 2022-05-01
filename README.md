@@ -1,6 +1,6 @@
 # Query All Features
 
-![npm](https://img.shields.io/npm/v/query-all-features)
+[![npm](https://img.shields.io/npm/v/query-all-features)](https://www.npmjs.com/package/query-all-features)
 
 *Query all features of an ArcGIS Feature Service*
 
