@@ -121,6 +121,8 @@ Distributed as an ES module which should work "out-of-the-box" with most popular
 ### Browser - Script tag via UMD CDN
 
 ```html
+<script src="https://unpkg.com/@esri/arcgis-rest-request@4/dist/bundled/request.umd.min.js"></script>
+<script src="https://unpkg.com/@esri/arcgis-rest-feature-service@4/dist/bundled/feature-service.umd.min.js"></script>
 <script src="https://unpkg.com/query-all-features"></script>
 
 <script>

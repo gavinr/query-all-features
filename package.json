@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "build": "microbundle",
+    "build": "microbundle build --globals @esri/arcgis-rest-request=arcgisRest,@esri/arcgis-rest-feature-service=arcgisRest",
     "dev": "microbundle watch"
   },
   "repository": {
@@ -34,13 +34,14 @@
   },
   "homepage": "https://github.com/gavinr/query-all-features#readme",
   "devDependencies": {
-    "@esri/arcgis-rest-feature-service": "^4.0.2",
-    "@esri/arcgis-rest-request": "^4.0.2",
     "jest": "^28.0.3",
     "microbundle": "^0.15.0"
   },
   "jest": {
     "transform": {}
   },
-  "dependencies": {}
+  "dependencies": {
+    "@esri/arcgis-rest-feature-service": "^4",
+    "@esri/arcgis-rest-request": "^4"
+  }
 }

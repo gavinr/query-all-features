@@ -1,2 +1,6 @@
 node_modules
 dist
+
+debug/*
+!debug/node-test.js
+!debug/test.html
