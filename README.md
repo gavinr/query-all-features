@@ -1,5 +1,7 @@
 # Query All Features
 
+![npm](https://img.shields.io/npm/v/query-all-features)
+
 *Query all features of an ArcGIS Feature Service*
 
 This package calls [queryFeatures](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/queryFeatures) multiple times until it gets all the features.
