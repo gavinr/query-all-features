@@ -121,17 +121,16 @@ Distributed as an ES module which should work "out-of-the-box" with most popular
 ### Browser - Script tag via UMD CDN
 
 ```html
-<script src="https://unpkg.com/@esri/arcgis-rest-request@4/dist/bundled/request.umd.min.js"></script>
-<script src="https://unpkg.com/@esri/arcgis-rest-feature-service@4/dist/bundled/feature-service.umd.min.js"></script>
+<!-- arcgis-rest-request and arcgis-rest-feature-service are dependencies: -->
+<script src="https://unpkg.com/@esri/arcgis-rest-request@4"></script>
+<script src="https://unpkg.com/@esri/arcgis-rest-feature-service@4"></script>
 <script src="https://unpkg.com/query-all-features"></script>
 
 <script>
     queryAllFeatures.queryAllFeatures({url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer/0"}).then((results) => {
         console.log('results', results);
-        document.body.innerHTML = `${results.features.length} results: <br /><br /><pre>` +  JSON.stringify(results, null, 4) + '</pre>';
     }, (err) => {
         console.log('err', err);
-        document.body.innerHTML = err;
     });
 </script>
 ```
