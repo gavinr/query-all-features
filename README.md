@@ -47,7 +47,7 @@ Query a feature service, repeatedly paging through the results to get all the fe
 
 | Parameter         | Type                               | Notes                                                                 |
 |-------------------|------------------------------------|-----------------------------------------------------------------------|
-| requestOptions    | [IQueryFeaturesOptions](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/IQueryFeaturesOptions) | This is the same input object that you would pass into [queryFeatures](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/queryFeatures). |
+| requestOptions    | [IQueryFeaturesOptions](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/IQueryFeaturesOptions) | This is the same input object that you would pass into [ArcGIS REST JS queryFeatures](https://developers.arcgis.com/arcgis-rest-js/api-reference/arcgis-rest-feature-service/queryFeatures). |
 | additionalOptions | [IQueryFeaturesAllAdditionalOptions](#IQueryFeaturesAllAdditionalOptions) | Additional options specific to this module. See table below. |
 
 ##### IQueryFeaturesAllAdditionalOptions
