@@ -25,7 +25,10 @@
   },
   "keywords": [
     "arcgis",
-    "rest"
+    "feature-service",
+    "arcgis-rest-api",
+    "arcgis-developers",
+    "arcgis-rest-js"
   ],
   "author": "Gavin Rehkemper",
   "license": "Apache-2.0",
